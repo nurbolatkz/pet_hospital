@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router >
+      <Router basename="/">
         <Routes>
             <Route path="/" element={<Home email={email} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
             <Route path="/login" element={<Login setLoggedIn={setLoggedIn} setEmail={setEmail} />} />
