@@ -89,6 +89,7 @@ section.banner-section {
 /*text section*/
 
 section.text-section {
+    width: 100%;
     padding: 100px 0px;
 }
 
@@ -144,6 +145,7 @@ section.services-section {
     padding: 100px 0px 70px;
     text-align: center;
     color: #FFF;
+    width: 100%;
 }
 
 section.services-section .section-title {
@@ -181,10 +183,14 @@ section.text-section.animal-section .text-col {
 /*Shop*/
 
 section.shop-section {
-    padding: 100px 0px 70px;
+    padding: 150px 0px 70px;
     background: #fcc302;
     text-align: center;
     color: #FFF;
+}
+
+section.shop-section {
+    padding-bottom: 10%;
 }
 
 .shop-box h5 {
@@ -200,6 +206,7 @@ section.shop-section {
 .shop-box .btn {
     border-radius: 58px;
     padding: 10px 38px;
+    background-color: #EE4266;
 }
 
 .shop-img {
@@ -215,6 +222,7 @@ section.shop-section {
 .price {
     font-size: 28px;
     margin-bottom: 16px;
+    color: #000;
 }
 
 .price span {
@@ -282,11 +290,14 @@ ul.team-social li a {
 
 .stats-section {
     background-size: cover !important;
-    padding: 100px 0px 70px;
+    padding: 50px 0px 70px;
+    height: 100vh;
 }
 
 .stats-box {
+   
     text-align: center;
+    
 }
 
 .stats-box h2 {
@@ -308,7 +319,7 @@ section.blog-section {
     padding: 100px 0px 70px;
 }
 
-.blog-info {}
+
 
 .blog-info h3 {
     font-size: 22px;
@@ -348,67 +359,120 @@ span.post-date {
 
 /*Footer*/
 
-footer {
-    background: #343434;
-    padding: 100px 0px;
-    color: #FFF;
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-footer h3 {
-    font-size: 26px;
-    color: #FFF;
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
 
-.footer-menu ul {
-    padding: 0;
-    margin: 0;
+.social-icon__item,
+.menu__item {
+  list-style: none;
 }
 
-.footer-menu ul li {
-    list-style: none;
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
 }
 
-.footer-menu ul li a {
-    color: #FFF;
-    text-decoration: none;
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
 }
 
-ul.footer-social {
-    margin: 20px 0px 0px;
-    padding: 0px;
+.menu__link:hover {
+  opacity: 1;
 }
 
-ul.footer-social li {
-    list-style: none;
-    display: inline-flex;
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
-ul.footer-social li a {
-    width: 30px;
-    height: 30px;
-    background: #FFF;
-    text-align: center;
-    line-height: 30px;
-    color: #000;
-    border-radius: 50%;
-    margin-right: 8px;
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
 }
 
-ul.footer-social li a:hover {
-    background: #fcc302;
-    color: #FFF;
-} 
-
-.input-group {
-    max-width: 407px;
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
 }
 
-.input-group button {
-    padding: 9px 33px;
-    border: 2px solid #00bec9;
-    background: #00bec9;
-    color: #FFF;
-    font-size: 21px;
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
 }
 
 

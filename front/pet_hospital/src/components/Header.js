@@ -8,7 +8,7 @@ import LogoIMG from '../images/logo.png'
 function Header() {
   return (
     <header>
-      <div className="container-fluid">
+      <div className="">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand" href="#">
             <img src={LogoIMG} alt="company name" />

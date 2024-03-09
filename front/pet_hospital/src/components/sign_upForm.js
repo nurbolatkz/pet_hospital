@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/login_style.css";
+import "../css/main_style.css";
 import google_image from "../images/google.png";
 
 function SignupForm() {
