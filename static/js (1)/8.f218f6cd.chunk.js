@@ -1,3 +1,0 @@
-/*! For license information please see 8.f218f6cd.chunk.js.LICENSE.txt */
-(this.webpackJsonppet_hospital=this.webpackJsonppet_hospital||[]).push([[8],{61:function(t,e,n){"use strict";n.r(e),n.d(e,"startStatusTap",(function(){return i}));var s=n(0),o=n(9),r=n(3);const i=()=>{const t=window;t.addEventListener("statusTap",()=>{Object(s.j)(()=>{const e=t.innerWidth,n=t.innerHeight,i=document.elementFromPoint(e/2,n/2);if(!i)return;const c=Object(o.b)(i);c&&new Promise(t=>Object(r.c)(c,t)).then(()=>{Object(s.m)(async()=>{c.style.setProperty("--overflow","hidden"),await Object(o.k)(c,300),c.style.removeProperty("--overflow")})})})})}}}]);
-//# sourceMappingURL=8.f218f6cd.chunk.js.map
