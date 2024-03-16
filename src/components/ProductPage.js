@@ -25,7 +25,7 @@ function ProductPage() {
       name: 'Vaccinations', 
       price: 699, 
       doctor_name: 'Yana',
-      image: DogImg2 
+      image: DogImg3 
     },
     { id: 4, 
       name: 'Dental Care', 
@@ -58,7 +58,6 @@ function ProductPage() {
 const [cartCourses, setCartCourses] = useState([]);
 const [searchCourse, setSearchCourse] = useState('');
 const [searchDoctor, setsearchDoctor] = useState('');
-const [Filtered_product, setFilteredProduct] = useState('');
 const [minPrice, setMinPrice] = useState('');
 const [maxPrice, setMaxPrice] = useState('');
 

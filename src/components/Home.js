@@ -11,17 +11,13 @@ import TeamContainer from './TeamContainer'
 import StatsSection from './StatsSection'
 import FooterContainer from './Footer'
 
-const Home = (props) => {
-  const { loggedIn, email } = props
-  const navigate = useNavigate();
+function Home (loggedIn, setLogout){
 
-  const onButtonClick = () => {
-    navigate('/login');
-  }
+  
 
   return (
     <div >
-      <Header />
+      <Header loggedIn={loggedIn} setLogout={setLogout} />
       <BannerSection/>
       <BannerSecond/>
       <ServiceContainer/>

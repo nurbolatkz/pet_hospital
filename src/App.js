@@ -10,20 +10,34 @@ import ProductPage from "./components/ProductPage";
 import './index.css'
 import { useEffect, useState } from 'react'
 import ContactForm from './components/ContactForm';
+import Checkout from './components/Checkout';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false)
-  const [email, setEmail] = useState('')
+  
+const [loggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    // Perform login logic here (e.g., authentication with backend)
+    // For simplicity, just set isLoggedIn to true
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    // Perform logout logic here (e.g., clear session, remove tokens)
+    // For simplicity, just set isLoggedIn to false
+    setIsLoggedIn(false);
+  };
 
   return (
     <div className="App">
       <Router basename="/">
         <Routes>
-            <Route path="/" element={<Home email={email} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
-            <Route path="/login" element={<Login setLoggedIn={setLoggedIn} setEmail={setEmail} />} />
+            <Route path="/" element={<Home loggedIn={loggedIn} />} />
+            <Route path="/login" element={<Login setLoggedIn={handleLogin}/>} />
             <Route path="/sign_up" element={<SignupForm />} />
             <Route path="/services" element={<ProductPage />} />
             <Route path="/contact" element={<ContactForm />} />
+            <Route path="/checkout" element={<Checkout />} />
         </Routes>
   </Router>
     </div>

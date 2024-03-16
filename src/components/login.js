@@ -2,12 +2,12 @@ import React from 'react';
 import "../css/login_style.css";
 import google_image from "../images/google.png";
 
-function LoginForm() {
+function LoginForm(setLoggedIn) {
     return (
         <div className="form login">
             <div className="form-content">
                 <header > Login</header>
-                <form action="#">
+                <form action="/">
                     <div className="field input-field">
                         <input type="email" placeholder="Email" className="input" />
                     </div>
@@ -22,7 +22,7 @@ function LoginForm() {
                     </div>
 
                     <div className="field button-field">
-                        <button>Login</button>
+                        <button onClick={setLoggedIn}>Login</button>
                     </div>
                 </form>
 

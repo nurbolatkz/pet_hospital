@@ -5,7 +5,7 @@ import LogoIMG from '../images/logo.png'
 
 
 
-function Header() {
+function Header(loggedIn, setLogout ) {
   return (
     <header>
       <div className="">
@@ -48,11 +48,20 @@ function Header() {
                   Contact
                 </a>
               </li>
-              <li className="nav-item">
+              {loggedIn ? (
+        <li className="nav-item">
+          <a className="nav-link" href="/login">
+                  Logout
+            </a>
+      </li>
+      ) : (
+        <li className="nav-item">
                 <a className="nav-link" href="/login">
                   Login
                 </a>
               </li>
+      )}
+              
             </ul>
           </div>
         </nav>

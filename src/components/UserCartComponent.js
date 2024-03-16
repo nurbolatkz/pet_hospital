@@ -76,6 +76,7 @@ return (
                 ${totalAmountCalculationFunction()}
             </p>
         </div>
+        <a href='/checkout'>
         <button
             className="checkout-button"
             disabled={cartCourses.length === 0 || 
@@ -83,6 +84,8 @@ return (
         >
             Proceed to Payment
         </button>
+        </a>
+       
     </div>
 </div>
             )}
