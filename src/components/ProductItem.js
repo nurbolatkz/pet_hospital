@@ -4,8 +4,9 @@ import "../css/product_item.css"
 
 function ProductItem({ courses, 
   filterCourseFunction, 
-  addCourseToCartFunction }) {
+  addCourseToCartFunction}) {
   return (
+    <div>
       <div className="product-list">
           {filterCourseFunction.length === 0 ? (
               <p className="no-results">
@@ -26,8 +27,13 @@ function ProductItem({ courses,
                       </button>
                   </div>
               ))
+              
           )}
+          
       </div>
+  
+
+      </div> 
   );
 }
 

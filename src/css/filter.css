@@ -4,8 +4,16 @@
     background-color: #fff;
     padding: 1.5rem;
     position: relative;
-    background-color: #e5e7eb; /* Set desired background color */
+    background-color: #e79bdd; /* Set desired background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    width: 80%;
+    margin-left: 10%;
+    
+  }
+
+  .filter_container{
+    margin-top: 2%;
+    margin-bottom: 15%;
   }
   
   /* Input fields and labels */
@@ -13,6 +21,10 @@
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
+  }
+
+  #name, #doctor {
+    width: 50%;
   }
   
   input[type="text"],
