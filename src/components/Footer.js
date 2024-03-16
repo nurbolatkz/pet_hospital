@@ -35,13 +35,13 @@ function FooterContainer() {
                 </li>
             </ul>
             <ul className="menu">
-                <li className="menu__item"><a className="menu__link" href="#">Home</a></li>
+                <li className="menu__item"><a className="menu__link" href="/">Home</a></li>
                 <li className="menu__item"><a className="menu__link" href="#">About</a></li>
-                <li className="menu__item"><a className="menu__link" href="#">Services</a></li>
+                <li className="menu__item"><a className="menu__link" href="/services">Services</a></li>
                 <li className="menu__item"><a className="menu__link" href="#">Team</a></li>
                 <li className="menu__item"><a className="menu__link" href="#">Contact</a></li>
             </ul>
-            <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+            <p>&copy;2021 Pet Hospital| All Rights Reserved</p>
         </footer>
     );
 }

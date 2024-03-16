@@ -564,8 +564,57 @@ footer {
     background: #FFF;
 }
  	
-	
-	
+}
+
+.FilterForm-container {
+    background-color: #fcc302 ;
+    width: 1000px;
+    max-width: 100%;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.FilterForm-container button {
+    border-radius: 58px;
+    padding: 10px 38px;
+    background-color: #EE4266;
+}
+
+.FilterForm-filter {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 32.666% 32.666% 32.666%;
+    column-gap: 1%;
+    row-gap: 10px;
+}
+
+.FilterForm-item {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FilterForm-item select,
+.FilterForm-item input,
+.FilterForm-item button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-left: 1px solid #ddd;
+    outline: none;
+}
+
+.FilterForm-item label {
+    display: block;
+    width: 40%;
+    padding: 0 10px;
+}
+
+.FilterForm-item.submit button {
+    background-color: #AA82ED;
+    color: #fff;
 }
 
 

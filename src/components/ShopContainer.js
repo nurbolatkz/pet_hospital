@@ -35,7 +35,7 @@ function ShopContainer() {
                             <span className="offer-price">$50</span>
                             <span className="offer-price2">$30</span>
                         </div>
-                        <a href="" className="btn btn-blue">Buy Now</a>
+                        <a href="/services" className="btn btn-blue">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ function ShopContainer() {
                             <span className="offer-price">$50</span>
                             <span className="offer-price2">$30</span>
                         </div>
-                        <a href="" className="btn btn-blue">Buy Now</a>
+                        <a href="/services" className="btn btn-blue">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ function ShopContainer() {
                             <span className="offer-price">$50</span>
                             <span className="offer-price2">$30</span>
                         </div>
-                        <a href="" className="btn btn-blue">Buy Now</a>
+                        <a href="/services" className="btn btn-blue">Buy Now</a>
                     </div>
                 </div>
             </div>
